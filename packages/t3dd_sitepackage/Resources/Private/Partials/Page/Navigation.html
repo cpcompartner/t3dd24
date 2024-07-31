@@ -1,0 +1,24 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/Fluid/ViewHelpers"
+      data-namespace-typo3-fluid="true">
+
+<input type="checkbox" id="navi-toggled"/>
+
+<ul id="quickbar">
+    <li>
+        <label for="navi-toggled"><span>Menü</span></label>
+    </li>
+</ul>
+
+<div class="first-level" id="navigation">
+    <nav>
+        <ul>
+            <f:for each="{subNavigation}" as="item">
+                <li>
+                    <f:link.typolink parameter="{item.link}" target="{item.target}">
+                        {item.title}
+                    </f:link.typolink>
+                </li>
+            </f:for>
+        </ul>
+    </nav>
+</div>

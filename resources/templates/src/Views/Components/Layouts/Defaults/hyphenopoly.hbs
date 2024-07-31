@@ -1,0 +1,37 @@
+{{!--
+    # Using Hyphenopoly
+    For using hyphenopoly in TYPO3 you have to enable the lines 19-20 and 33-37. Also you have to remove line 18
+--}}
+
+<script src="./JavaScript/Hyphenopoly_Loader.js"></script>
+<script>
+    Hyphenopoly.config({
+        require: {
+            "de-DE": "FORCEHYPHENOPOLY",
+            //"en-EN": "FORCEHYPHENOPOLY"
+        },
+        fallbacks: {
+            "de-DE": "de",
+            "en-EN": "en-gb"
+        },
+        paths: {
+            patterndir: "./assets/HyphenationPatterns/",
+            // patterndir: document.querySelector("[data-hyphenopoly-pattern-dir]").dataset.hyphenopolyPatternDir,
+            // maindir: document.querySelector("[data-hyphenopoly-main-dir]").dataset.hyphenopolyMainDir,
+        },
+        setup: {
+            timeout: 1000,
+            //defaultLanguage: "de-DE",
+            dontHyphenateClass: "donthyphenate",
+            selectors: {
+                ".hyphenate": {}
+            }
+        }
+    });
+</script>
+
+{{!--
+<span class="hidden"
+      data-hyphenopoly-pattern-dir="{cp:publicPath(path: 'EXT:bau_sitepackage/Resources/Public/assets/HyphenationPatterns/')}"
+      data-hyphenopoly-main-dir="{cp:publicPath(path: 'EXT:bau_sitepackage/Resources/Public/JavaScript/')}"></span>
+--}}

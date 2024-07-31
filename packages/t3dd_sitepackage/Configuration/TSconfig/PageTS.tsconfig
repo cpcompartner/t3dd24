@@ -1,0 +1,5 @@
+@import 'EXT:t3dd_sitepackage/Configuration/TSconfig/BackendLayouts/*.tsconfig'
+@import 'EXT:t3dd_sitepackage/Configuration/TSconfig/RTE.tsconfig'
+
+TCEFORM.pages.backend_layout_next_level.removeItems = -1
+TCEFORM.pages.backend_layout.removeItems = -1

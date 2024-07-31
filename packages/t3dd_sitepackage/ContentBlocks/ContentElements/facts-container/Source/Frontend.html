@@ -1,0 +1,17 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+
+<f:asset.script identifier="factJS"
+                src="EXT:t3dd_sitepackage/Resources/Public/JavaScript/facts.module.js"></f:asset.script>
+
+<div class="content-grid fact-area">
+    <f:for each="{data.facts_item}" as="item" iteration="i">
+        <div class="fact-container">
+            <div class="fact-number">
+                {item.number_field}
+                <p class="{f:if(condition: '{i.index} % 2' , then: 'text-center', else: 'text-end')}">
+                    {item.subheader}
+                </p>
+            </div>
+        </div>
+    </f:for>
+</div>

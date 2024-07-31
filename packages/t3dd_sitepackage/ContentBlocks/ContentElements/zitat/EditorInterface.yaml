@@ -1,0 +1,15 @@
+name: cp/zitat
+typeName: cp/zitat
+group: t3dd_sitepackage
+prefixFields: true
+prefixType: vendor
+basics:
+  - TYPO3/Appearance
+fields:
+  - identifier: bodytext
+    type: TextArea
+    enableRichtext: true
+    useExistingField: true
+  - identifier: image
+    type: Image
+    useExistingField: true

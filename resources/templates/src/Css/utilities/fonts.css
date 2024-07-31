@@ -1,0 +1,17 @@
+/* road-rage-regular - latin */
+@font-face {
+    font-display: swap;
+    font-family: "Road Rage";
+    font-style: normal;
+    font-weight: 400;
+    src: url("../assets/fonts/RoadRage-Regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+@font-face {
+    font-display: swap;
+    font-family: "freight-macro-pro";
+    font-style: normal;
+    font-weight: 400;
+    src: url("../assets/fonts/FreightMacroProBook-Regular.woff2")
+        format("woff2");
+}

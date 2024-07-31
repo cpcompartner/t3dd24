@@ -1,0 +1,27 @@
+mod {
+  web_layout {
+    BackendLayouts {
+      t3dd_sitepackage_subpage {
+        title = Unterseiten Template
+        icon = EXT:t3dd_sitepackage/Resources/Public/assets/Images/Icons/app-page-type-cp.svg
+
+        config {
+          backend_layout {
+            rowCount = 1
+            colCount = 1
+            rows {
+              1 {
+                columns {
+                  1 {
+                    name = Content
+                    colPos = 0
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

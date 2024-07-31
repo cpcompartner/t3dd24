@@ -1,0 +1,44 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/Fluid/ViewHelpers"
+      data-namespace-typo3-fluid="true">
+
+<footer>
+    <div class="content-grid">
+        <div class="upper-footer">
+            <h2 class="text-h6">
+                <f:format.raw><f:translate extensionName="t3dd_sitepackage" key="footer.website.info"/></f:format.raw>
+            </h2>
+
+            <ul>
+                <f:for each="{footerLinks}" as="linkItem">
+                    <li>
+                        <f:link.external uri="{linkItem.link}">
+                            {linkItem.title}
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="22"
+                                height="15"
+                                viewBox="0 0 22 15"
+                                fill="none"
+                            >
+                                <path
+                                    d="M21.7071 8.20711C22.0976 7.81658 22.0976 7.18342 21.7071 6.7929L15.3431 0.428934C14.9526 0.0384091 14.3195 0.0384091 13.9289 0.428933C13.5384 0.819458 13.5384 1.45262 13.9289 1.84315L19.5858 7.5L13.9289 13.1569C13.5384 13.5474 13.5384 14.1805 13.9289 14.5711C14.3195 14.9616 14.9526 14.9616 15.3431 14.5711L21.7071 8.20711ZM-8.74228e-08 8.5L21 8.5L21 6.5L8.74228e-08 6.5L-8.74228e-08 8.5Z"
+                                    fill="#EB545B"
+                                />
+                            </svg>
+                        </f:link.external>
+                    </li>
+                </f:for>
+            </ul>
+        </div>
+
+        <ul class="navi-add">
+            <f:for each="{footerNavigation}" as="navigationItem">
+                <li>
+                    <f:link.typolink parameter="{navigationItem.link}">
+                        {navigationItem.title}
+                    </f:link.typolink>
+                </li>
+            </f:for>
+        </ul>
+    </div>
+</footer>

@@ -1,0 +1,157 @@
+#quickbar {
+    position: fixed;
+    height: fit-content;
+    width: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    z-index: 9999;
+    padding: 10px;
+    transition: 0.4s linear;
+
+    li {
+        padding: 20px;
+    }
+
+    label[for="navi-toggled"] {
+        display: block;
+        cursor: pointer;
+        width: 25px;
+        height: 25px;
+        position: relative;
+        overflow: hidden;
+
+        span {
+            transition: 0.4s linear;
+            text-indent: -9999px;
+            width: 0;
+            top: 50%;
+            transform: translate(-50%, -50%);
+
+            &,
+            &:before,
+            &:after {
+                content: "";
+                position: absolute;
+                display: block;
+                @apply bg-devdays-secondary;
+                height: 6px;
+                left: 50%;
+                transform-origin: center;
+            }
+            & {
+                height: 0;
+            }
+            &:before,
+            &:after {
+                top: calc(50% + 0rem);
+                width: 25px;
+                transition:
+                    top 0.3s ease-in-out,
+                    transform 0.3s 0.2s linear;
+            }
+            &:before {
+                transform: translate(-50%, -50%) rotate(45deg);
+            }
+            &:after {
+                transform: translate(-50%, -50%) rotate(-45deg);
+            }
+        }
+    }
+}
+
+#navi-toggled {
+    display: none;
+    &:not(:checked) {
+        ~ #navigation {
+            opacity: 0;
+            transform: translate(100%);
+        }
+
+        ~ #quickbar {
+            @apply bg-transparent;
+            label[for="navi-toggled"] {
+                &:after {
+                    opacity: 0;
+                    visibility: hidden;
+                }
+                span {
+                    width: 25px;
+
+                    &:before,
+                    &:after {
+                        transform: translate(-50%, -50%);
+                        transition:
+                            top 0.3s 0.2s ease-in-out,
+                            transform 0.3s linear;
+                    }
+                    &:before {
+                        top: -7px;
+                    }
+                    &:after {
+                        top: 7px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+#navigation {
+    transition: 0.5s all;
+    position: fixed;
+    right: 0;
+    opacity: 1;
+    padding-top: 85px;
+    top: 0;
+    z-index: 9998;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    transform: translate(0);
+    @apply bg-devdays-primary;
+    overflow-y: auto;
+
+    @media only screen and (min-width: 992px) {
+        align-items: center;
+    }
+
+    nav {
+        padding: 36px;
+
+        ul {
+            li {
+                display: block;
+                margin-bottom: 18px;
+                cursor: pointer;
+                transition: 0.3s all;
+
+                &:hover {
+                    @media only screen and (min-width: 1024px) {
+                        transform: scale(1.1);
+                    }
+                }
+
+                a {
+                    font-size: 26px;
+                    line-height: 1.3em;
+                    background-size: 0% 100%;
+                    @apply text-h2 text-devdays-secondary;
+                    font-size: clamp(80px, 10vw, 130px);
+                }
+            }
+        }
+    }
+}
+
+.navi-add {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 18px;
+    padding-bottom: 16px;
+    @apply text-devdays-secondary;
+}

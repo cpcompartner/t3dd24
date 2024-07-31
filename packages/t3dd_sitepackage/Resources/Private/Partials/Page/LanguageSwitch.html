@@ -1,0 +1,20 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/Fluid/ViewHelpers"
+      xmlns:i="http://typo3.org/ns/B13/Picture/ViewHelpers"
+      data-namespace-typo3-fluid="true">
+
+<f:if condition="{language} === en">
+    <f:then>
+        <a href="/de" aria-label="Switch to german">
+            <i:image src="EXT:t3dd_sitepackage/Resources/Public/assets/Images/german.png"
+                     fileExtension="webp"
+                     alt="Flag of Germany"/>
+        </a>
+    </f:then>
+    <f:else>
+        <a href="/en" aria-label="Switch to english">
+            <i:image src="EXT:t3dd_sitepackage/Resources/Public/assets/Images/english.png"
+                     fileExtension="webp"
+                     alt="Flag of Great Britain"/>
+        </a>
+    </f:else>
+</f:if>

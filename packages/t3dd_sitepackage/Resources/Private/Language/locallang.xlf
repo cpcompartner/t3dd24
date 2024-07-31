@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.0" xmlns:t3="http://typo3.org/schemas/xliff">
+	<file t3:id="1682076821" source-language="en" datatype="plaintext" original="messages" date="2023-04-21T17:30:25Z"
+		  product-name="t3dd_sitepackage">
+		<header/>
+		<body>
+			<trans-unit id="landingpage.members.cta">
+				<source><![CDATA[click on the names to check out <br/> our members]]></source>
+			</trans-unit>
+			<trans-unit id="landingpage.visit_cp">
+				<source>Visit CP</source>
+			</trans-unit>
+			<trans-unit id="landingpage.ufo.alt-text">
+				<source>UFO floating, beaming up the the names of our team members</source>
+			</trans-unit>
+
+			<trans-unit id="footer.website.info">
+				<source><![CDATA[Website created using <br/> TYPO3 v13 and Content Blocks]]></source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

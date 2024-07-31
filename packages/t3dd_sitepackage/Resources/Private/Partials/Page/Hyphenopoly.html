@@ -1,0 +1,34 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+
+<f:asset.script identifier="hyphenopolyFile"
+                src="EXT:t3dd_sitepackage/Resources/Public/JavaScript/Hyphenopoly_Loader.js"/>
+
+<f:asset.script identifier="hyphenopoly" useNonce="1" priority="0">
+    <f:spaceless>
+        const hyphenopoly = Hyphenopoly.config({
+        require: {
+        "
+        <f:format.raw value="{language}"/>
+        ": "FORCEHYPHENOPOLY"
+        },
+        paths: {
+        maindir: "
+        <f:uri.resource path="JavaScript/" extensionName="t3dd_sitepackage" absolute="1" useCacheBusting="0"/>
+        ",
+        patterndir: "
+        <f:uri.resource path="assets/HyphenationPatterns/" extensionName="t3dd_sitepackage" absolute="1"
+                        useCacheBusting="0"/>
+        "
+        },
+        setup: {
+        timeout: 1000,
+        dontHyphenateClass: "donthyphenate",
+        selectors: {
+        ".hyphenate": {}
+        }
+        }
+        });
+    </f:spaceless>
+</f:asset.script>
+
+</html>

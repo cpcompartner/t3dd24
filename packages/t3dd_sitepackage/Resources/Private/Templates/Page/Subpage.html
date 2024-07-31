@@ -1,0 +1,32 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+
+<f:layout name="Default"/>
+
+<f:section name="Main">
+
+    <header>
+        <div class="headline">
+            <f:if condition="{headlineImage.0}">
+                <div class="header-head">
+                    <f:image image="{headlineImage.0}" alt="{headlineImage.0.alternative}" fileExtension="webp"
+                             loading="lazy"></f:image>
+                </div>
+            </f:if>
+
+            <h1>
+                {data.title}
+            </h1>
+        </div>
+
+        <div class="content-grid">
+            <p class="subline">
+                {data.subtitle}
+            </p>
+        </div>
+    </header>
+
+    <f:cObject typoscriptObjectPath="lib.dynamicContent" data="{pageUid: data.uid, colPos: 0, wrap: '|'}"/>
+
+</f:section>
+
+</html>

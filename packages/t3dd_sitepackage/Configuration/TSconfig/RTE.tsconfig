@@ -1,0 +1,7 @@
+RTE.default.preset = t3dd-default-preset
+
+RTE.config.tt_content {
+  bodytext {
+    preset = t3dd-default-preset
+  }
+}

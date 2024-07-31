@@ -1,0 +1,20 @@
+identifier: cp/header-palette
+fields:
+  - identifier: palette_header
+    type: Palette
+    label: 'LLL:EXT:t3dd_sitepackage/ContentBlocks/Basics/Source/Language/Labels.xlf:palettes.palette_header.label'
+    description: 'LLL:EXT:t3dd_sitepackage/ContentBlocks/Basics/Source/Language/Labels.xlf:palettes.palette_header.description'
+    fields:
+      - identifier: header
+        type: Text
+        label: 'LLL:EXT:t3dd_sitepackage/ContentBlocks/Basics/Source/Language/Labels.xlf:header'
+        description: 'LLL:EXT:t3dd_sitepackage/ContentBlocks/Basics/Source/Language/Labels.xlf:header.description'
+        enableRichtext: true
+        useExistingField: true
+      - type: Linebreak
+      - identifier: subheader
+        type: Text
+        label: 'LLL:EXT:t3dd_sitepackage/ContentBlocks/Basics/Source/Language/Labels.xlf:subheader'
+        description: 'LLL:EXT:t3dd_sitepackage/ContentBlocks/Basics/Source/Language/Labels.xlf:subheader.description'
+        enableRichtext: true
+        useExistingField: true

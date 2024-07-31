@@ -1,0 +1,15 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/Fluid/ViewHelpers"
+      data-namespace-typo3-fluid="true">
+
+<main id="go-to-content">
+    <f:render section="Main"/>
+</main>
+
+<f:if condition="{current} === subpage">
+    <f:render partial="Navigation" arguments="{_all}"/>
+
+    <f:render partial="Footer" arguments="{_all}"/>
+</f:if>
+
+<f:render partial="Hyphenopoly" arguments="{language: language}"/>
+</html>

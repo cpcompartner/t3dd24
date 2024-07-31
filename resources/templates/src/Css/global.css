@@ -1,0 +1,142 @@
+/*  */
+* {
+    margin: 0;
+    padding: 0;
+    @apply text-default;
+
+    &,
+    &::before,
+    &::after {
+        box-sizing: inherit;
+    }
+}
+
+html.lenis,
+html.lenis body {
+    height: auto;
+}
+
+.lenis.lenis-smooth {
+    scroll-behavior: auto !important;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+    overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
+    overflow: hidden;
+}
+
+.lenis.lenis-scrolling iframe {
+    pointer-events: none;
+}
+
+main {
+    overflow-x: clip;
+}
+
+html {
+    @apply bg-devdays-primary text-ui-light;
+    font-family: "freight-macro-pro";
+    box-sizing: border-box;
+}
+
+body {
+    main {
+        @apply bg-devdays-primary;
+    }
+}
+
+h1,
+.text-h1,
+h2,
+.text-h2,
+h3,
+.text-h3,
+h4,
+.text-h4,
+h5,
+.text-h5,
+h6,
+.text-h6 {
+    font-family: "Road Rage";
+    hyphens: auto;
+}
+
+h1 {
+    @apply text-h1;
+    transform: rotate(5deg);
+}
+
+h2 {
+    @apply text-h2;
+}
+
+h3 {
+    @apply text-h3;
+}
+
+h4 {
+    @apply text-h4;
+}
+
+h5 {
+    @apply text-h5;
+}
+
+h6 {
+    @apply text-h6;
+}
+
+p {
+    margin-bottom: 1rem;
+}
+
+details {
+    summary {
+        @apply text-h6;
+        font-size: clamp(30px, 6vw, 70px);
+    }
+}
+
+details {
+    margin-bottom: 18px;
+    max-width: 1095px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: clamp(18px, 3.5vw, 30px);
+
+    summary {
+        cursor: pointer;
+        background-image: none;
+        -webkit-appearance: none;
+        transition: 300ms all;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 18px;
+        gap: 18px;
+
+        &::after {
+            content: url("../assets/Images/plus.svg");
+            transform: rotate(0deg);
+            position: relative;
+            transition: 300ms all;
+        }
+    }
+
+    &[open] {
+        summary {
+            &::after {
+                transform: rotate(45deg);
+            }
+        }
+    }
+}
+
+details summary::-webkit-details-marker {
+    display: none;
+}

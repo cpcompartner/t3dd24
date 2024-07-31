@@ -1,0 +1,11 @@
+name: cp/rounded-stat
+typeName: cp/rounded-stat
+group: t3dd_sitepackage
+prefixFields: true
+prefixType: vendor
+basics:
+  - TYPO3/Appearance
+fields:
+  - identifier: header
+    type: Text
+    useExistingField: true

@@ -1,0 +1,15 @@
+name: cp/facts
+typeName: cp/facts
+group: t3dd_sitepackage
+prefixFields: true
+prefixType: vendor
+basics:
+  - TYPO3/Appearance
+fields:
+  - identifier: subheader
+    type: Text
+    label: Subheader
+    useExistingField: true
+  - identifier: number_field
+    type: Number
+    label: Number

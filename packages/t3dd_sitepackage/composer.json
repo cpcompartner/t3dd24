@@ -1,0 +1,19 @@
+{
+	"name": "cp/t3dd_sitepackage",
+	"description": "Sitepackage for T3 Dev Day - Festival Template",
+	"type": "typo3-cms-extension",
+	"version": "1.0.0",
+	"autoload": {
+		"psr-4": {
+			"Cp\\T3ddFestivalTemplate\\": "Classes"
+		}
+	},
+	"require": {
+		"typo3/cms-core": "*"
+	},
+	"extra": {
+		"typo3/cms": {
+			"extension-key": "t3dd_sitepackage"
+		}
+	}
+}

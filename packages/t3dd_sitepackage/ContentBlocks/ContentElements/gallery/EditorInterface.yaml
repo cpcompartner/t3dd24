@@ -1,0 +1,13 @@
+name: cp/gallery
+typeName: cp/gallery
+group: t3dd_sitepackage
+prefixFields: true
+prefixType: vendor
+basics:
+  - TYPO3/Appearance
+fields:
+  - identifier: image
+    description: max. 3 images allowed
+    type: Image
+    maxitems: 3
+    useExistingField: true

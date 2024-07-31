@@ -1,0 +1,313 @@
+/* Helper Classes */
+
+.btn {
+    font-family: "Road Rage";
+    font-size: 26px;
+    width: auto;
+    z-index: 5;
+
+    background-image: url("../assets/Images/btn-bg.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    position: relative;
+    padding: 26px 20px;
+
+    span {
+        padding: 15px;
+        display: block;
+        font-size: 26px;
+        text-align: center;
+    }
+
+    &.red {
+        background-image: url("../assets/Images/btn-red.svg");
+    }
+
+    &:hover {
+        transform: rotate(20deg);
+        transition: 0.2s ease-in-out;
+    }
+}
+
+/* Text Area with text right headline left */
+
+.standard-text {
+    max-width: 1175px;
+    width: 100%;
+    margin: 0 auto;
+
+    h2 {
+        font-size: clamp(45px, 10vw, 150px);
+    }
+
+    p {
+        margin-left: auto;
+        font-size: clamp(18px, 3.5vw, 30px);
+
+        @media only screen and (max-width: 1024px) {
+            max-width: 610px;
+        }
+    }
+}
+
+.zitat-section {
+    padding-top: 30px;
+    position: relative;
+    overflow: hidden;
+
+    @media only screen and (min-width: 768px) {
+        padding-top: 80px;
+    }
+
+    &::after {
+        content: "";
+        background-image: url("../assets/Images/spaltter.webp");
+        height: 359px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 500px;
+        position: absolute;
+        top: 30%;
+        right: -20%;
+        pointer-events: none;
+
+        @media only screen and (min-width: 640px) {
+            height: 500px;
+            width: 700px;
+        }
+
+        @media only screen and (min-width: 768px) {
+            height: 550px;
+            width: 700px;
+            top: 35%;
+        }
+
+        @media only screen and (min-width: 1024px) {
+            top: 50%;
+            height: 650px;
+        }
+
+        @media only screen and (min-width: 1364px) {
+            height: 1000px;
+            width: 1700px;
+            top: 30%;
+            right: -50%;
+        }
+
+        @media only screen and (min-width: 1520px) {
+            right: -40%;
+            top: 37%;
+        }
+    }
+
+    figure {
+        position: relative;
+
+        &::before,
+        &::after {
+            content: "";
+            left: 0;
+            background-position: center;
+            background-size: cover;
+            width: 100%;
+            display: block;
+            position: absolute;
+            background-repeat: no-repeat;
+            height: 60px;
+            @media only screen and (min-width: 480px) {
+                height: 80px;
+            }
+
+            @media only screen and (min-width: 768px) {
+                height: 120px;
+            }
+
+            @media only screen and (min-width: 950px) {
+                height: 140px;
+            }
+
+            @media only screen and (min-width: 1100px) {
+                height: 160px;
+            }
+
+            @media only screen and (min-width: 1200px) {
+                height: 200px;
+            }
+
+            @media only screen and (min-width: 1520px) {
+                height: 250px;
+            }
+        }
+
+        &::before {
+            background-image: url("../assets/Images/risse.webp");
+            top: -25px;
+
+            @media only screen and (min-width: 768px) {
+                top: -45px;
+            }
+
+            @media only screen and (min-width: 1200px) {
+                top: -80px;
+            }
+        }
+
+        &::after {
+            background-image: url("../assets/Images/risse.webp");
+            transform: rotate(180deg);
+            bottom: -25px;
+
+            @media only screen and (min-width: 768px) {
+                bottom: -45px;
+            }
+            @media only screen and (min-width: 1200px) {
+                bottom: -80px;
+            }
+        }
+
+        picture {
+            img {
+                aspect-ratio: 393 / 247;
+                width: 100%;
+                object-fit: cover;
+
+                @media only screen and (min-width: 768px) {
+                    aspect-ratio: 1727 / 1020;
+                }
+
+                @media only screen and (min-width: 1520px) {
+                    aspect-ratio: 16 / 9;
+                }
+            }
+        }
+    }
+
+    .zitat {
+        margin-top: 80px;
+        text-align: center;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+
+        @media only screen and (min-width: 640px) {
+            margin-top: 150px;
+        }
+
+        @media only screen and (min-width: 768px) {
+            margin-top: 250px;
+        }
+
+        p {
+            max-width: 957px;
+            font-size: clamp(18px, 3vw, 50px);
+            line-height: 1.4em;
+        }
+
+        span {
+            @apply text-devdays-secondary;
+            font-size: 100px;
+            font-family: "Road Rage";
+            position: relative;
+
+            @media only screen and (min-width: 1024px) {
+                font-size: 300px;
+            }
+
+            &.opening {
+                top: -50px;
+            }
+
+            &.closing {
+                transform: rotate(180deg);
+                bottom: -30px;
+            }
+        }
+    }
+}
+
+.padding-before {
+    padding-top: 40px;
+
+    @media only screen and (min-width: 640px) {
+        padding-top: 100px;
+    }
+
+    @media only screen and (min-width: 1024px) {
+        padding-top: 150px;
+    }
+
+    @media only screen and (min-width: 1364px) {
+        padding-top: 200px;
+    }
+
+    @media only screen and (min-width: 1520px) {
+        padding-top: 250px;
+    }
+}
+
+.padding-after {
+    padding-bottom: 40px;
+
+    @media only screen and (min-width: 640px) {
+        padding-bottom: 100px;
+    }
+
+    @media only screen and (min-width: 1024px) {
+        padding-bottom: 150px;
+    }
+
+    @media only screen and (min-width: 1364px) {
+        padding-bottom: 200px;
+    }
+
+    @media only screen and (min-width: 1520px) {
+        padding-bottom: 250px;
+    }
+}
+
+.circle-hover {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.circle-hover circle-hover {
+    padding: 8px 16px;
+    border: none;
+    background: none;
+    outline: none;
+}
+
+.circle-hover svg {
+    position: absolute;
+    top: 0;
+    left: -10px;
+    width: 120%;
+    height: 100%;
+    pointer-events: none;
+}
+
+.circle-hover path {
+    stroke: #202F5A;
+    stroke-width: 8px;
+    stroke-dasharray: 0 1500;
+}
+
+.circle-hover:hover path {
+    animation: draw 0.5s forwards;
+}
+
+@keyframes draw {
+    from {
+        stroke-dasharray: 0 1500;
+    }
+
+    to {
+        stroke-dasharray: 1500 1500;
+    }
+}

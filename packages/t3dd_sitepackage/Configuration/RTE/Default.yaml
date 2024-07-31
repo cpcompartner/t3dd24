@@ -1,0 +1,81 @@
+imports:
+  - { resource: "EXT:rte_ckeditor/Configuration/RTE/Processing.yaml" }
+  - { resource: "EXT:rte_ckeditor/Configuration/RTE/Editor/Base.yaml" }
+  - { resource: 'EXT:rte_ckeditor/Configuration/RTE/Editor/Plugins.yaml' }
+  - { resource: 'EXT:rte_ckeditor/Configuration/RTE/Editor/Full.yaml' }
+
+editor:
+  config:
+    contentsCss: "EXT:t3dd_sitepackage/Resources/Public/Css/rte.css.processed"
+
+    style:
+      definitions:
+        - { name: "Lead", element: "p", attributes: { 'class': 'lead' } }
+
+    heading:
+      options:
+        - { model: 'paragraph', title: 'Paragraph' }
+        - { model: 'heading2', view: 'h2', title: 'H2' }
+        - { model: 'heading3', view: 'h3', title: 'H3' }
+        - { model: 'heading4', view: 'h4', title: 'H4' }
+
+    toolbar:
+      items:
+        - style
+        - heading
+        - clipboard
+        - Link
+        - undo
+        - redo
+        - selectAll
+        - sourceEditing
+        - bold
+        - italic
+        - underline
+        - strikethrough
+        - removeFormat
+        - bulletedList
+        - numberedList
+        - blockQuote
+        - indent
+        - outdent
+        - specialCharacters
+        - fontFamily
+        - fontSize
+        - fontColor
+        - fontBackgroundColor
+
+    fontColor:
+      colors:
+        - { label: 'Orange', color: '#ff8700' }
+        - { label: 'Blue', color: '#0080c9' }
+        - { label: 'Green', color: '#209d44' }
+
+    fontBackgroundColor:
+      colors:
+        - { label: 'Stage orange light', color: '#fab85c' }
+
+    fontFamily:
+      options:
+        - 'default'
+        - 'Arial, sans-serif'
+
+    fontSize:
+      options:
+        - 'default'
+        - 18
+        - 21
+
+    extraPlugins:
+      - justify
+
+    removePlugins:
+      - image
+
+    removeButtons:
+      - Anchor
+      - Underline
+      - Strike
+
+    importModules:
+      - { 'module': '@ckeditor/ckeditor5-font', 'exports': [ 'Font' ] }

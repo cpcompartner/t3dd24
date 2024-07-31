@@ -1,0 +1,24 @@
+.DS_Store
+.idea
+nbproject
+/var/*
+!/var/labels
+/vendor
+/public/*
+!/public/.htaccess
+!/public/cache.php
+!/public/typo3conf
+/public/typo3conf/*
+!/public/typo3conf/LocalConfiguration.php
+!/public/typo3conf/AdditionalConfiguration.php
+.php-cs-fixer.cache
+
+#ContentBlocks
+packages/t3dd_sitepackage/ContentBlocks/ContentElements/**/Source/Template/*.html
+
+# content blocks that always get build somehow (cant reproduce) TODO remove before deploying on github
+packages/t3dd_sitepackage/ContentBlocks/ContentElements/footer/EditorInterface.yaml
+packages/t3dd_sitepackage/ContentBlocks/ContentElements/navigation/EditorInterface.yaml
+
+.env
+shared

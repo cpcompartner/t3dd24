@@ -1,0 +1,24 @@
+@import 'EXT:fluid_styled_content/Configuration/TypoScript/setup.typoscript'
+@import 'EXT:picture/Configuration/TypoScript/setup.typoscript'
+
+@import 'EXT:t3dd_sitepackage/Configuration/TypoScript/Helper/*.typoscript'
+@import 'EXT:t3dd_sitepackage/Configuration/TypoScript/Page/*.typoscript'
+
+plugin.tx_picture {
+  # Default for adding of images as webp.
+  addWebp = 1
+  # Default for render images as webp only.
+  onlyWebp = 1
+  # Default for using lossless compression for webp.
+  lossless = 1
+
+  # Breakpoints for media query specified in the sources attribute:
+  # breakpoints {
+  #   sm = 640
+  #   md = 1024
+  #   lg = 1280
+  # }
+
+  # We use the same lazyLoading setting as is the default for the website
+  lazyLoading = {$styles.content.image.lazyLoading}
+}

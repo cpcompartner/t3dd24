@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns:t3="http://typo3.org/schemas/xliff" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+	<file source-language="en" original="Labels.xlf" datatype="plaintext" product-name="cp/zitat"
+		  date="2024-06-01T18:32:03+02:00">
+		<header></header>
+		<body>
+			<trans-unit id="description" resname="description" approved="yes">
+				<source></source>
+			</trans-unit>
+			<trans-unit id="text.label" resname="text.label" approved="yes">
+				<source>Quote Element</source>
+			</trans-unit>
+			<trans-unit id="title" resname="title" approved="yes">
+				<source>Quote Element</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>
+

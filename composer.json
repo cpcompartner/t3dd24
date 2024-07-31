@@ -1,0 +1,50 @@
+{
+	"name": "cp/t3dd24",
+	"description": "TYPO3 CMS - T3 Dev Day 24",
+	"type": "project",
+	"repositories": {
+		"files": {
+			"type": "path",
+			"url": "./packages/*"
+		},
+		"cp": {
+			"type": "composer",
+			"url": "https://gitlab.cp-compartner.de/api/v4/group/26/-/packages/composer/packages.json"
+		},
+		"typo3-console": {
+			"type": "git",
+			"url": "https://github.com/bmack/TYPO3-Console.git"
+		},
+		"plausible": {
+			"type": "git",
+			"url": "https://github.com/cpcompartner/typo3-ext-plausibleio.git"
+		}
+	},
+	"require": {
+		"ext-intl": "*",
+		"php": ">=8.2 <8.3",
+
+		"cp/cp-base": "dev-update-13",
+		"typo3/cms-core": "^13.1",
+
+		"b13/picture": "dev-master",
+		"contentblocks/content-blocks": "dev-typo3-v13",
+		"helhum/typo3-console": "dev-issue/1169",
+		"dreistromland/typo3-plausibleio": "dev-develop",
+		"cp/t3dd_sitepackage": "1.0.0"
+	},
+	"require-dev": {
+		"typo3/coding-standards": "dev-main"
+	},
+	"config": {
+		"allow-plugins": {
+			"typo3/class-alias-loader": true,
+			"typo3/cms-composer-installers": true,
+			"php-http/discovery": true
+		},
+		"platform": {
+			"php": "8.2.0"
+		},
+		"sort-packages": false
+	}
+}

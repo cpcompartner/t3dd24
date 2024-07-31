@@ -1,0 +1,71 @@
+# Inherits default site-unspecific frontend policy mutations (enabled per default)
+inheritDefault: true
+
+imports:
+  -
+    resource: 'EXT:cp_base/Configuration/Yaml/Csp/Youtube.yaml'
+
+mutations:
+  default:
+    mode: extend
+    directive: default-src
+    sources:
+      - "'self'"
+      - "'wasm-unsafe-eval'"
+
+  connect:
+    mode: extend
+    directive: connect-src
+    sources:
+      - "'self'"
+
+  font:
+    mode: extend
+    directive: font-src
+    sources:
+      - "'self'"
+      - 'data:'
+
+  img:
+    mode: extend
+    directive: img-src
+    sources:
+      - "'self'"
+      - 'data:'
+
+  script:
+    mode: extend
+    directive: script-src
+    sources:
+      - https://www.youtube.com
+      - "'self'"
+      - "'wasm-unsafe-eval'"
+
+  script-src:
+    mode: set
+    directive: script-src-elem
+    sources:
+      - "'self'"
+      - "'unsafe-inline'"
+      - 'blob:'
+
+  style:
+    mode: extend
+    directive: style-src
+    sources:
+      - "'self'"
+      - "'unsafe-inline'"
+
+  style-src:
+    mode: set
+    directive: style-src-elem
+    sources:
+      - "'self'"
+      - "'unsafe-inline'"
+
+  worker:
+    mode: extend
+    directive: worker-src
+    sources:
+      - "'self'"
+      - 'blob:'

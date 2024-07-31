@@ -1,0 +1,31 @@
+{
+    "FONT_NAME#1": {
+        "Regular": {
+            "Name": "XYZ_REGULAR",
+            "FILES": {
+                "woff": "filename1.woff",
+                "woff2": "filename1.woff2",
+                "ttf": "filename1.ttf"
+            },
+            "Source": "Google CDN"
+        },
+        "Bold": {
+            "Name": "XYZ_BOLD",
+            "FILES": {
+                "woff": "filename12.woff",
+                "woff2": "filename12.woff2",
+                "ttf": "filename12.ttf"
+            },
+            "Source": "Local"
+        },
+        "Black": {
+            "Name": "XYZ_BLACK",
+            "FILES": {
+                "woff": "filename123.woff",
+                "woff2": "filename123.woff2",
+                "ttf": "filename123.ttf"
+            },
+            "Source": "Google CDN"
+        }
+    }
+}

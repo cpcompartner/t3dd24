@@ -1,0 +1,33 @@
+name: cp/project-showcase
+typeName: cp/project-showcase
+group: t3dd_sitepackage
+prefixFields: true
+prefixType: vendor
+basics:
+  - TYPO3/Appearance
+fields:
+  - identifier: header
+    type: Text
+    useExistingField: true
+  - identifier: image
+    description: max. 3 images allowed
+    maxitems: 3
+    minitems: 3
+    useExistingField: true
+  - identifier: wide_image
+    label: Wide Image
+    description: max. 1 image allowed
+    type: File
+    maxitems: 1
+    minitems: 1
+  - identifier: end_image
+    label: Image next to text
+    description: max. 1 image allowed
+    type: File
+    maxitems: 1
+    minitems: 1
+  - identifier: subheader
+    type: Text
+    label: Project Name
+    useExistingField: true
+

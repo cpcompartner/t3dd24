@@ -1,0 +1,23 @@
+<html
+    xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+    data-namespace-typo3-fluid="true"
+>
+<div class="padding-before padding-after">
+    <div class="zitat-section">
+        <f:if condition="{data.image.0}">
+            <figure>
+                <picture>
+                    <f:image image="{data.image.0}" alt="{data.image.0.alternative}" fileExtension="webp"
+                             loading="lazy"></f:image>
+                </picture>
+            </figure>
+        </f:if>
+        <div class="content-grid">
+            <div class="zitat">
+                <span class="opening">“</span>
+                {data.bodytext -> f:format.html()}
+                <span class="closing">“</span>
+            </div>
+        </div>
+    </div>
+</div>

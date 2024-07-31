@@ -1,0 +1,93 @@
+page = PAGE
+page {
+  typeNum = 0
+  bodyTag = <body class="no-touch hyphenate">
+  shortcutIcon = EXT:t3dd_sitepackage/Resources/Public/assets/Favicon/favicon.ico
+
+  includeCSS.app = EXT:t3dd_sitepackage/Resources/Public/Css/app.css
+}
+
+page.headerData.2039 = FLUIDTEMPLATE
+page.headerData.2039.file = EXT:t3dd_sitepackage/Resources/Private/Templates/Page/HeaderData.html
+
+page.10 = FLUIDTEMPLATE
+page.10 {
+  settings {
+    footerLinks = {$page.uid.footerLinks}
+    footerNavigation = {$page.uid.footerNavigation}
+    subNavigation = {$page.uid.subNavigation}
+  }
+
+  variables {
+    pageType = TEXT
+    pageType {
+      value = startPage
+      if.value.data = page:uid
+      if.equals = 1
+    }
+
+    language = TEXT
+    language.data = siteLanguage:twoLetterIsoCode
+  }
+
+  layoutRootPaths.0 = EXT:t3dd_sitepackage/Resources/Private/Layouts/Page/
+  partialRootPaths.0 = EXT:t3dd_sitepackage/Resources/Private/Partials/Page/
+  templateRootPaths.0 = EXT:t3dd_sitepackage/Resources/Private/Templates/Page/
+
+  templateName = TEXT
+  templateName {
+    cObject = TEXT
+    cObject {
+      data = pagelayout
+      required = 1
+      case = uppercamelcase
+      split {
+        token = pagets__t3dd_sitepackage_
+        cObjNum = 1
+        1.current = 1
+      }
+    }
+
+    ifEmpty = Default
+  }
+
+  dataProcessing {
+    20 = menu
+    20 {
+      levels = 2
+      as = mainNavigation
+    }
+
+    30 = menu
+    30 {
+      as = subNavigation
+      levels = 2
+      special = directory
+      special.value = {$page.uid.subNavigation}
+    }
+
+    40 = menu
+    40 {
+      as = footerNavigation
+      levels = 2
+      special = directory
+      special.value = {$page.uid.footerNavigation}
+    }
+
+    50 = menu
+    50 {
+      as = footerLinks
+      levels = 2
+      special = directory
+      special.value = {$page.uid.footerLinks}
+    }
+
+    60 = files
+    60 {
+      as = headlineImage
+      references.fieldName = headline_image
+    }
+  }
+}
+
+

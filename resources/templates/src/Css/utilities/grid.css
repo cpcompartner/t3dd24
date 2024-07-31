@@ -1,0 +1,51 @@
+.content-grid {
+    --padding-inline: clamp(
+        1rem,
+        calc(1rem + (2 - 1) * ((100vw - 20rem) / (64 - 20))),
+        2rem
+    );
+
+    --content-max-width: 83.25rem;
+    --breakout-max-width: 150ch;
+    --wide-content-max-width: 108rem;
+
+    /* static */
+    --breakout-size: calc((var(--breakout-max-width) - var(--content-max-width)) / 2);
+    --wide-content-size: calc((var(--wide-content-max-width) - var(--content-max-width)) / 2);
+
+    display: grid;
+    grid-template-columns:
+        [full-width-start] minmax(var(--padding-inline, 1rem), 1fr)
+        [wide-content-start] minmax(0, var(--wide-content-size))
+        [breakout-start] minmax(0, var(--breakout-size))
+        [content-start] min(100% - (var(--padding-inline, 1rem) * 2), var(--content-max-width)) [content-end]
+        minmax(0, var(--breakout-size)) [breakout-end]
+        minmax(0, var(--wide-content-size)) [wide-content-end]
+        minmax(var(--padding-inline, 1rem), 1fr) [full-width-end];
+
+    .content-grid {
+        display: block;
+    }
+}
+
+.content-grid > :not(.wide-content, .breakout, .full-width),
+.full-width > :not(.wide-content, .breakout, .full-width) {
+    grid-column: content;
+}
+
+.content-grid > .wide-content,
+.full-width > .wide-content {
+    grid-column: wide-content;
+}
+
+.content-grid > .breakout,
+.full-width > .breakout {
+    grid-column: breakout;
+}
+
+.content-grid > .full-width {
+    grid-column: full-width;
+
+    display: grid;
+    grid-template-columns: inherit;
+}

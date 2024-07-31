@@ -1,0 +1,19 @@
+<html
+    xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+    xmlns:i="http://typo3.org/ns/B13/Picture/ViewHelpers"
+    data-namespace-typo3-fluid="true"
+>
+<div class="content-grid padding-before padding-after gallery-section">
+    <div class="gallery-container">
+        <f:if condition="{data.image}">
+            <f:for each="{data.image}" as="image">
+                <figure>
+                    <picture>
+                        <f:image image="{image}" alt="{image.alternative}" fileExtension="webp"
+                                 loading="lazy"></f:image>
+                    </picture>
+                </figure>
+            </f:for>
+        </f:if>
+    </div>
+</div>

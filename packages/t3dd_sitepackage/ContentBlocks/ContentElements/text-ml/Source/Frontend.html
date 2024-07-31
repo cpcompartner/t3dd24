@@ -1,0 +1,34 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+
+<f:if condition="{data.header_link}">
+    <f:then>
+        <div class="content-grid padding-before padding-after">
+            <div class="standard-text">
+                <h2 class="mb-2 text-h5">
+                    {data.header}
+                </h2>
+
+                {data.bodytext -> f:format.html()}
+            </div>
+
+            <f:if condition="{data.header_link}">
+                <div class="flex flex-col justify-center items-center">
+                    <f:link.typolink parameter="{data.header_link}" class="btn red">
+                        <span>{data.subheader}</span>
+                    </f:link.typolink>
+                </div>
+            </f:if>
+        </div>
+    </f:then>
+    <f:else>
+        <div class="content-grid padding-before padding-after">
+            <div class="standard-text">
+                <h2 class="mb-2 text-h5">
+                    {data.header}
+                </h2>
+
+                {data.bodytext -> f:format.nl2br() -> f:format.html()}
+            </div>
+        </div>
+    </f:else>
+</f:if>

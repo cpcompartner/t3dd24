@@ -1,0 +1,18 @@
+name: cp/accord-container
+typeName: cp/accord-container
+group: t3dd_sitepackage-container
+prefixFields: true
+prefixType: vendor
+basics:
+  - TYPO3/Appearance
+fields:
+  - identifier: accord_item
+    type: Collection
+    label: Accord Item
+    minitems: 1
+    foreign_table: tt_content
+    overrideChildTca:
+      columns:
+        CType:
+          config:
+            default: cp/accord

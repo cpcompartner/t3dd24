@@ -1,0 +1,52 @@
+<html
+    xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+    xmlns:i="http://typo3.org/ns/B13/Picture/ViewHelpers"
+    data-namespace-typo3-fluid="true"
+>
+
+<div id="best-project" class="padding-before padding-after">
+    <h2>
+        {data.header}
+    </h2>
+
+    <f:if condition="{data.image}">
+        <div class="layered-images">
+            <f:if condition="{data.image.0}">
+                <figure class="center-image">
+                    <picture>
+                        <f:image image="{data.image.0}" alt="{data.image.0.alternative}" fileExtension="webp"
+                                 loading="lazy"></f:image>
+                    </picture>
+                </figure>
+            </f:if>
+        </div>
+
+        <div class="project-detail-images">
+            <f:if condition="{data.wide_image.0}">
+                <figure class="middle-img">
+                    <picture>
+                        <f:image image="{data.wide_image.0}" alt="{data.wide_image.0.alternative}" fileExtension="webp"
+                                 loading="lazy"></f:image>
+                    </picture>
+                </figure>
+            </f:if>
+        </div>
+
+        <div class="project-img-text">
+            <f:if condition="{data.end_image.0}">
+                <figure>
+                    <picture>
+                        <f:image image="{data.end_image.0}" alt="{data.end_image.0.alternative}" fileExtension="webp"
+                                 loading="lazy"></f:image>
+                    </picture>
+                </figure>
+            </f:if>
+
+            <div class="project-name">
+                <h2>
+                    {data.subheader}
+                </h2>
+            </div>
+        </div>
+    </f:if>
+</div>

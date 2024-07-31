@@ -1,0 +1,16 @@
+name: cp/accord
+typeName: cp/accord
+group: t3dd_sitepackage
+prefixFields: true
+prefixType: vendor
+basics:
+  - TYPO3/Appearance
+fields:
+  - identifier: header
+    type: Text
+    useExistingField: true
+  - identifier: bodytext
+    type: TextArea
+    enableRichText: true
+    useExistingField: true
+

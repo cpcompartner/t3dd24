@@ -1,0 +1,17 @@
+name: t3dd24.cp-compartner.de
+type: typo3
+docroot: public
+webserver_type: apache-fpm
+php_version: "8.2"
+database:
+  type: mariadb
+  version: "10.5"
+composer_version: "2"
+router_http_port: "80"
+router_https_port: "443"
+xdebug_enabled: false
+project_tld: dev.arpa
+use_dns_when_possible: true
+webimage_extra_packages: [ "graphicsmagick" ]
+web_environment:
+  - TYPO3_CONTEXT=Development

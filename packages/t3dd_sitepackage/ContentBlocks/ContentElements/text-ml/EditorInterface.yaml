@@ -1,0 +1,22 @@
+name: cp/text-ml
+typeName: cp/text-ml
+group: t3dd_sitepackage
+prefixFields: true
+prefixType: vendor
+basics:
+  - TYPO3/Appearance
+fields:
+  - identifier: header
+    type: Text
+    useExistingField: true
+  - identifier: bodytext
+    type: TextArea
+    enableRichText: true
+    useExistingField: true
+  - identifier: subheader
+    label: Link Text
+    description: optional
+    useExistingField: true
+  - identifier: header_link
+    useExistingField: true
+    description: optional

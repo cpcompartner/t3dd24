@@ -1,0 +1,46 @@
+{{#> Layouts/sub title="Dr. Agans eigene Unterseite" }}
+{{#* inline "content-block" }}
+
+
+<header>
+    <div class="headline">
+        <div class="header-head">
+            <img src="../../assets/Images/btn-bg.svg"/>
+        </div>
+
+        <h1>
+            Renaniac
+        </h1>
+    </div>
+
+    <div class="content-grid">
+        <p class="subline">
+            Lorem Ipsum
+        </p>
+    </div>
+</header>
+
+{{> facts/numbers }}
+
+{{> project-showcase/project-showcase }}
+
+{{> text-ml/text-ml }}
+
+{{!-- {{> rounded-stat/rounded-stat }} --}}
+
+{{> accord/accord }}
+
+{{> zitat/zitat }}
+
+{{> gallery/gallery }}
+
+
+
+
+<div class="content-grid padding-before padding-after">
+    {{> text-ml/text-ml }}
+    <div class="flex flex-col justify-center items-center"><a href="https://www.cp-compartner.de" title="Besuche CPCompartner" class="btn red"><span>The Project</span></a></div>
+</div>
+
+{{/ inline }}
+{{/ Layouts/sub }}

@@ -1,0 +1,12 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+@import "./utilities/grid.css";
+@import "./utilities/fonts.css";
+
+@import "./global.css";
+@import "./navigation.css";
+@import "./form.css";
+@import "./helper.css";
+@import "./layout.css";

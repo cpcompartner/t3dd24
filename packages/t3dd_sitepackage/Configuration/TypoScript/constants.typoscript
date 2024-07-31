@@ -1,0 +1,21 @@
+@import 'EXT:fluid_styled_content/Configuration/TypoScript/constants.typoscript'
+
+styles.templates {
+  layoutRootPath = EXT:t3dd_sitepackage/Resources/Private/Layouts/ContentElements/
+  partialRootPath = EXT:t3dd_sitepackage/Resources/Private/Partials/ContentElements/
+  templateRootPath = EXT:t3dd_sitepackage/Resources/Private/Templates/ContentElements/
+}
+
+page {
+  fluidtemplate {
+    layoutRootPath = EXT:t3dd_sitepackage/Resources/Private/Layouts/Page/
+    partialRootPath = EXT:t3dd_sitepackage/Resources/Private/Partials/Page/
+    templateRootPath = EXT:t3dd_sitepackage/Resources/Private/Templates/Page/
+  }
+
+  uid {
+    subNavigation = 6
+    footerLinks = 14
+    footerNavigation = 12
+  }
+}

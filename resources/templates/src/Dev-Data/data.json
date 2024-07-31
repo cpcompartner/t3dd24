@@ -1,0 +1,645 @@
+{
+    "project": {
+        "name": "Fokus Bahn",
+        "description": "Lorem ipsum dolor sit amet mauris fusce est mattis eiusmod lacus purus donec.",
+        "logo": "../assets/Images/logo.svg",
+        "domain": "client-web.de"
+    },
+    "routes": {
+        "index": {
+            "name": "Index Route",
+            "description": "Index content provided by data.json"
+        },
+        "content": {
+            "name": "Content Route",
+            "description": "Content content provided by data.json"
+        },
+        "project": {
+            "name": "Project Route",
+            "description": "Project content provided by data.json"
+        },
+        "event": {
+            "name": "Event Route",
+            "description": "Event content provided by data.json"
+        }
+    },
+    "citySliders": [
+        {
+            "title": "Bochum",
+            "description": "Lorem ipsum dolor sit amet mauris fusce est mattis eiusmod lacus purus donec."
+        },
+        {
+            "title": "Dortmund",
+            "description": "Lorem ipsum dolor sit amet mauris fusce est mattis eiusmod lacus purus donec."
+        },
+        {
+            "title": "Gelsenkirchen",
+            "description": "Lorem ipsum dolor sit amet mauris fusce est mattis eiusmod lacus purus donec."
+        },
+        {
+            "title": "Stuttgart",
+            "description": "Lorem ipsum dolor sit amet mauris fusce est mattis eiusmod lacus purus donec."
+        },
+        {
+            "title": "Essen",
+            "description": "Lorem ipsum dolor sit amet mauris fusce est mattis eiusmod lacus purus donec."
+        },
+        {
+            "title": "Berlin",
+            "description": "Lorem ipsum dolor sit amet mauris fusce est mattis eiusmod lacus purus donec."
+        },
+        {
+            "title": "Frankfurt",
+            "description": "Lorem ipsum dolor sit amet mauris fusce est mattis eiusmod lacus purus donec."
+        },
+        {
+            "title": "Hamburg",
+            "description": "Lorem ipsum dolor sit amet mauris fusce est mattis eiusmod lacus purus donec."
+        },
+        {
+            "title": "München",
+            "description": "Lorem ipsum dolor sit amet mauris fusce est mattis eiusmod lacus purus donec."
+        },
+        {
+            "title": "Bochum1",
+            "numbers": [
+                {
+                    "value": "1.811.448",
+                    "description": "Lorem ipsum dolor. Testing new."
+                },
+                {
+                    "value": "1.811.448",
+                    "description": "Lorem ipsum dolor. Testing new."
+                },
+                {
+                    "value": "1.811.448",
+                    "description": "Lorem ipsum dolor. Testing new."
+                }
+            ]
+        },
+        {
+            "title": "Dortmund1",
+            "numbers": [
+                {
+                    "value": "1.811.448",
+                    "description": "Lorem ipsum dolor. Testing new."
+                },
+                {
+                    "value": "1.811.448",
+                    "description": "Lorem ipsum dolor. Testing new."
+                }
+            ]
+        },
+        {
+            "title": "Gelsenkirchen1",
+            "numbers": [
+                {
+                    "value": "1.811.448",
+                    "description": "Lorem ipsum dolor. Testing new."
+                }
+            ]
+        },
+        {
+            "title": "Bochum",
+            "description": "Lorem ipsum dolor sit amet mauris fusce est mattis eiusmod lacus purus donec."
+        },
+        {
+            "title": "Dortmund",
+            "description": "Lorem ipsum dolor sit amet mauris fusce est mattis eiusmod lacus purus donec."
+        },
+        {
+            "title": "Gelsenkirchen",
+            "description": "Lorem ipsum dolor sit amet mauris fusce est mattis eiusmod lacus purus donec."
+        },
+        {
+            "title": "Stuttgart",
+            "description": "Lorem ipsum dolor sit amet mauris fusce est mattis eiusmod lacus purus donec."
+        },
+        {
+            "title": "Essen",
+            "description": "Lorem ipsum dolor sit amet mauris fusce est mattis eiusmod lacus purus donec."
+        },
+        {
+            "title": "Berlin",
+            "description": "Lorem ipsum dolor sit amet mauris fusce est mattis eiusmod lacus purus donec."
+        },
+        {
+            "title": "Frankfurt",
+            "description": "Lorem ipsum dolor sit amet mauris fusce est mattis eiusmod lacus purus donec."
+        },
+        {
+            "title": "Hamburg",
+            "description": "Lorem ipsum dolor sit amet mauris fusce est mattis eiusmod lacus purus donec."
+        },
+        {
+            "title": "München",
+            "description": "Lorem ipsum dolor sit amet mauris fusce est mattis eiusmod lacus purus donec."
+        },
+        {
+            "title": "Bochum1",
+            "numbers": [
+                {
+                    "value": "1.811.448",
+                    "description": "Lorem ipsum dolor. Testing new."
+                },
+                {
+                    "value": "1.811.448",
+                    "description": "Lorem ipsum dolor. Testing new."
+                },
+                {
+                    "value": "1.811.448",
+                    "description": "Lorem ipsum dolor. Testing new."
+                }
+            ]
+        },
+        {
+            "title": "Dortmund1",
+            "numbers": [
+                {
+                    "value": "1.811.448",
+                    "description": "Lorem ipsum dolor. Testing new."
+                },
+                {
+                    "value": "1.811.448",
+                    "description": "Lorem ipsum dolor. Testing new."
+                }
+            ]
+        },
+        {
+            "title": "Gelsenkirchen1",
+            "numbers": [
+                {
+                    "value": "1.811.448",
+                    "description": "Lorem ipsum dolor. Testing new."
+                }
+            ]
+        },
+        {
+            "title": "Bochum",
+            "description": "Lorem ipsum dolor sit amet mauris fusce est mattis eiusmod lacus purus donec."
+        },
+        {
+            "title": "Dortmund",
+            "description": "Lorem ipsum dolor sit amet mauris fusce est mattis eiusmod lacus purus donec."
+        },
+        {
+            "title": "Gelsenkirchen",
+            "description": "Lorem ipsum dolor sit amet mauris fusce est mattis eiusmod lacus purus donec."
+        },
+        {
+            "title": "Stuttgart",
+            "description": "Lorem ipsum dolor sit amet mauris fusce est mattis eiusmod lacus purus donec."
+        },
+        {
+            "title": "Essen",
+            "description": "Lorem ipsum dolor sit amet mauris fusce est mattis eiusmod lacus purus donec."
+        },
+        {
+            "title": "Berlin",
+            "description": "Lorem ipsum dolor sit amet mauris fusce est mattis eiusmod lacus purus donec."
+        },
+        {
+            "title": "Frankfurt",
+            "description": "Lorem ipsum dolor sit amet mauris fusce est mattis eiusmod lacus purus donec."
+        },
+        {
+            "title": "Hamburg",
+            "description": "Lorem ipsum dolor sit amet mauris fusce est mattis eiusmod lacus purus donec."
+        },
+        {
+            "title": "München",
+            "description": "Lorem ipsum dolor sit amet mauris fusce est mattis eiusmod lacus purus donec."
+        },
+        {
+            "title": "Bochum1",
+            "numbers": [
+                {
+                    "value": "1.811.448",
+                    "description": "Lorem ipsum dolor. Testing new."
+                },
+                {
+                    "value": "1.811.448",
+                    "description": "Lorem ipsum dolor. Testing new."
+                },
+                {
+                    "value": "1.811.448",
+                    "description": "Lorem ipsum dolor. Testing new."
+                }
+            ]
+        },
+        {
+            "title": "Dortmund1",
+            "numbers": [
+                {
+                    "value": "1.811.448",
+                    "description": "Lorem ipsum dolor. Testing new."
+                },
+                {
+                    "value": "1.811.448",
+                    "description": "Lorem ipsum dolor. Testing new."
+                }
+            ]
+        },
+        {
+            "title": "Gelsenkirchen1",
+            "numbers": [
+                {
+                    "value": "1.811.448",
+                    "description": "Lorem ipsum dolor. Testing new."
+                }
+            ]
+        },
+        {
+            "title": "Bochum",
+            "description": "Lorem ipsum dolor sit amet mauris fusce est mattis eiusmod lacus purus donec."
+        },
+        {
+            "title": "Dortmund",
+            "description": "Lorem ipsum dolor sit amet mauris fusce est mattis eiusmod lacus purus donec."
+        },
+        {
+            "title": "Gelsenkirchen",
+            "description": "Lorem ipsum dolor sit amet mauris fusce est mattis eiusmod lacus purus donec."
+        },
+        {
+            "title": "Stuttgart",
+            "description": "Lorem ipsum dolor sit amet mauris fusce est mattis eiusmod lacus purus donec."
+        },
+        {
+            "title": "Essen",
+            "description": "Lorem ipsum dolor sit amet mauris fusce est mattis eiusmod lacus purus donec."
+        },
+        {
+            "title": "Berlin",
+            "description": "Lorem ipsum dolor sit amet mauris fusce est mattis eiusmod lacus purus donec."
+        },
+        {
+            "title": "Frankfurt",
+            "description": "Lorem ipsum dolor sit amet mauris fusce est mattis eiusmod lacus purus donec."
+        },
+        {
+            "title": "Hamburg",
+            "description": "Lorem ipsum dolor sit amet mauris fusce est mattis eiusmod lacus purus donec."
+        },
+        {
+            "title": "München",
+            "description": "Lorem ipsum dolor sit amet mauris fusce est mattis eiusmod lacus purus donec."
+        },
+        {
+            "title": "Bochum1",
+            "numbers": [
+                {
+                    "value": "1.811.448",
+                    "description": "Lorem ipsum dolor. Testing new."
+                },
+                {
+                    "value": "1.811.448",
+                    "description": "Lorem ipsum dolor. Testing new."
+                },
+                {
+                    "value": "1.811.448",
+                    "description": "Lorem ipsum dolor. Testing new."
+                }
+            ]
+        },
+        {
+            "title": "Dortmund1",
+            "numbers": [
+                {
+                    "value": "1.811.448",
+                    "description": "Lorem ipsum dolor. Testing new."
+                },
+                {
+                    "value": "1.811.448",
+                    "description": "Lorem ipsum dolor. Testing new."
+                }
+            ]
+        },
+        {
+            "title": "Gelsenkirchen1",
+            "numbers": [
+                {
+                    "value": "1.811.448",
+                    "description": "Lorem ipsum dolor. Testing new."
+                }
+            ]
+        },
+        {
+            "title": "Bochum",
+            "description": "Lorem ipsum dolor sit amet mauris fusce est mattis eiusmod lacus purus donec."
+        },
+        {
+            "title": "Dortmund",
+            "description": "Lorem ipsum dolor sit amet mauris fusce est mattis eiusmod lacus purus donec."
+        },
+        {
+            "title": "Gelsenkirchen",
+            "description": "Lorem ipsum dolor sit amet mauris fusce est mattis eiusmod lacus purus donec."
+        },
+        {
+            "title": "Stuttgart",
+            "description": "Lorem ipsum dolor sit amet mauris fusce est mattis eiusmod lacus purus donec."
+        },
+        {
+            "title": "Essen",
+            "description": "Lorem ipsum dolor sit amet mauris fusce est mattis eiusmod lacus purus donec."
+        },
+        {
+            "title": "Berlin",
+            "description": "Lorem ipsum dolor sit amet mauris fusce est mattis eiusmod lacus purus donec."
+        },
+        {
+            "title": "Frankfurt",
+            "description": "Lorem ipsum dolor sit amet mauris fusce est mattis eiusmod lacus purus donec."
+        },
+        {
+            "title": "Hamburg",
+            "description": "Lorem ipsum dolor sit amet mauris fusce est mattis eiusmod lacus purus donec."
+        },
+        {
+            "title": "München",
+            "description": "Lorem ipsum dolor sit amet mauris fusce est mattis eiusmod lacus purus donec."
+        },
+        {
+            "title": "Bochum1",
+            "numbers": [
+                {
+                    "value": "1.811.448",
+                    "description": "Lorem ipsum dolor. Testing new."
+                },
+                {
+                    "value": "1.811.448",
+                    "description": "Lorem ipsum dolor. Testing new."
+                },
+                {
+                    "value": "1.811.448",
+                    "description": "Lorem ipsum dolor. Testing new."
+                }
+            ]
+        },
+        {
+            "title": "Dortmund1",
+            "numbers": [
+                {
+                    "value": "1.811.448",
+                    "description": "Lorem ipsum dolor. Testing new."
+                },
+                {
+                    "value": "1.811.448",
+                    "description": "Lorem ipsum dolor. Testing new."
+                }
+            ]
+        },
+        {
+            "title": "Gelsenkirchen1",
+            "numbers": [
+                {
+                    "value": "1.811.448",
+                    "description": "Lorem ipsum dolor. Testing new."
+                }
+            ]
+        },
+        {
+            "title": "Bochum",
+            "description": "Lorem ipsum dolor sit amet mauris fusce est mattis eiusmod lacus purus donec."
+        },
+        {
+            "title": "Dortmund",
+            "description": "Lorem ipsum dolor sit amet mauris fusce est mattis eiusmod lacus purus donec."
+        },
+        {
+            "title": "Gelsenkirchen",
+            "description": "Lorem ipsum dolor sit amet mauris fusce est mattis eiusmod lacus purus donec."
+        },
+        {
+            "title": "Stuttgart",
+            "description": "Lorem ipsum dolor sit amet mauris fusce est mattis eiusmod lacus purus donec."
+        },
+        {
+            "title": "Essen",
+            "description": "Lorem ipsum dolor sit amet mauris fusce est mattis eiusmod lacus purus donec."
+        },
+        {
+            "title": "Berlin",
+            "description": "Lorem ipsum dolor sit amet mauris fusce est mattis eiusmod lacus purus donec."
+        },
+        {
+            "title": "Frankfurt",
+            "description": "Lorem ipsum dolor sit amet mauris fusce est mattis eiusmod lacus purus donec."
+        },
+        {
+            "title": "Hamburg",
+            "description": "Lorem ipsum dolor sit amet mauris fusce est mattis eiusmod lacus purus donec."
+        },
+        {
+            "title": "München",
+            "description": "Lorem ipsum dolor sit amet mauris fusce est mattis eiusmod lacus purus donec."
+        },
+        {
+            "title": "Bochum1",
+            "numbers": [
+                {
+                    "value": "1.811.448",
+                    "description": "Lorem ipsum dolor. Testing new."
+                },
+                {
+                    "value": "1.811.448",
+                    "description": "Lorem ipsum dolor. Testing new."
+                },
+                {
+                    "value": "1.811.448",
+                    "description": "Lorem ipsum dolor. Testing new."
+                }
+            ]
+        },
+        {
+            "title": "Dortmund1",
+            "numbers": [
+                {
+                    "value": "1.811.448",
+                    "description": "Lorem ipsum dolor. Testing new."
+                },
+                {
+                    "value": "1.811.448",
+                    "description": "Lorem ipsum dolor. Testing new."
+                }
+            ]
+        },
+        {
+            "title": "Gelsenkirchen1",
+            "numbers": [
+                {
+                    "value": "1.811.448",
+                    "description": "Lorem ipsum dolor. Testing new."
+                }
+            ]
+        },
+        {
+            "title": "Bochum",
+            "description": "Lorem ipsum dolor sit amet mauris fusce est mattis eiusmod lacus purus donec."
+        },
+        {
+            "title": "Dortmund",
+            "description": "Lorem ipsum dolor sit amet mauris fusce est mattis eiusmod lacus purus donec."
+        },
+        {
+            "title": "Gelsenkirchen",
+            "description": "Lorem ipsum dolor sit amet mauris fusce est mattis eiusmod lacus purus donec."
+        },
+        {
+            "title": "Stuttgart",
+            "description": "Lorem ipsum dolor sit amet mauris fusce est mattis eiusmod lacus purus donec."
+        },
+        {
+            "title": "Essen",
+            "description": "Lorem ipsum dolor sit amet mauris fusce est mattis eiusmod lacus purus donec."
+        },
+        {
+            "title": "Berlin",
+            "description": "Lorem ipsum dolor sit amet mauris fusce est mattis eiusmod lacus purus donec."
+        },
+        {
+            "title": "Frankfurt",
+            "description": "Lorem ipsum dolor sit amet mauris fusce est mattis eiusmod lacus purus donec."
+        },
+        {
+            "title": "Hamburg",
+            "description": "Lorem ipsum dolor sit amet mauris fusce est mattis eiusmod lacus purus donec."
+        },
+        {
+            "title": "München",
+            "description": "Lorem ipsum dolor sit amet mauris fusce est mattis eiusmod lacus purus donec."
+        },
+        {
+            "title": "Bochum1",
+            "numbers": [
+                {
+                    "value": "1.811.448",
+                    "description": "Lorem ipsum dolor. Testing new."
+                },
+                {
+                    "value": "1.811.448",
+                    "description": "Lorem ipsum dolor. Testing new."
+                },
+                {
+                    "value": "1.811.448",
+                    "description": "Lorem ipsum dolor. Testing new."
+                }
+            ]
+        },
+        {
+            "title": "Dortmund1",
+            "numbers": [
+                {
+                    "value": "1.811.448",
+                    "description": "Lorem ipsum dolor. Testing new."
+                },
+                {
+                    "value": "1.811.448",
+                    "description": "Lorem ipsum dolor. Testing new."
+                }
+            ]
+        },
+        {
+            "title": "Gelsenkirchen1",
+            "numbers": [
+                {
+                    "value": "1.811.448",
+                    "description": "Lorem ipsum dolor. Testing new."
+                }
+            ]
+        },
+        {
+            "title": "Bochum",
+            "description": "Lorem ipsum dolor sit amet mauris fusce est mattis eiusmod lacus purus donec."
+        },
+        {
+            "title": "Dortmund",
+            "description": "Lorem ipsum dolor sit amet mauris fusce est mattis eiusmod lacus purus donec."
+        },
+        {
+            "title": "Gelsenkirchen",
+            "description": "Lorem ipsum dolor sit amet mauris fusce est mattis eiusmod lacus purus donec."
+        },
+        {
+            "title": "Stuttgart",
+            "description": "Lorem ipsum dolor sit amet mauris fusce est mattis eiusmod lacus purus donec."
+        },
+        {
+            "title": "Essen",
+            "description": "Lorem ipsum dolor sit amet mauris fusce est mattis eiusmod lacus purus donec."
+        },
+        {
+            "title": "Berlin",
+            "description": "Lorem ipsum dolor sit amet mauris fusce est mattis eiusmod lacus purus donec."
+        },
+        {
+            "title": "Frankfurt",
+            "description": "Lorem ipsum dolor sit amet mauris fusce est mattis eiusmod lacus purus donec."
+        },
+        {
+            "title": "Hamburg",
+            "description": "Lorem ipsum dolor sit amet mauris fusce est mattis eiusmod lacus purus donec."
+        },
+        {
+            "title": "München",
+            "description": "Lorem ipsum dolor sit amet mauris fusce est mattis eiusmod lacus purus donec."
+        },
+        {
+            "title": "Bochum1",
+            "numbers": [
+                {
+                    "value": "1.811.448",
+                    "description": "Lorem ipsum dolor. Testing new."
+                },
+                {
+                    "value": "1.811.448",
+                    "description": "Lorem ipsum dolor. Testing new."
+                },
+                {
+                    "value": "1.811.448",
+                    "description": "Lorem ipsum dolor. Testing new."
+                }
+            ]
+        },
+        {
+            "title": "Dortmund1",
+            "numbers": [
+                {
+                    "value": "1.811.448",
+                    "description": "Lorem ipsum dolor. Testing new."
+                },
+                {
+                    "value": "1.811.448",
+                    "description": "Lorem ipsum dolor. Testing new."
+                }
+            ]
+        },
+        {
+            "title": "Gelsenkirchen1",
+            "numbers": [
+                {
+                    "value": "1.811.448",
+                    "description": "Lorem ipsum dolor. Testing new."
+                }
+            ]
+        }
+    ],
+    "images": [
+        "https://loremflickr.com/320/320/dog",
+        "https://loremflickr.com/320/320/cat",
+        "https://loremflickr.com/320/320/train",
+        "https://loremflickr.com/320/320/smile",
+        "https://loremflickr.com/320/320/rainbow",
+        "https://loremflickr.com/320/320/tiger",
+        "https://loremflickr.com/320/320/web",
+        "https://loremflickr.com/320/320/insect",
+        "https://loremflickr.com/320/320/elephant",
+        "https://loremflickr.com/320/320/carpet",
+        "https://loremflickr.com/320/320/house",
+        "https://loremflickr.com/320/320/car",
+        "https://loremflickr.com/320/320/landscape",
+        "https://loremflickr.com/320/320/forest",
+        "https://loremflickr.com/320/320/nature"
+    ]
+}

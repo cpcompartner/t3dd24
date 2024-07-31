@@ -1,0 +1,18 @@
+config {
+  disablePrefixComment = 1
+
+  headerComment (
+    This site is developed by CP-COMPARTNER - https://www.cp-compartner.de/ -
+  )
+
+  spamProtectEmailAddresses = ascii
+  spamProtectEmailAddresses_atSubst = <span>&#064;</span>
+  spamProtectEmailAddresses_lastDotSubst = <span>&#046;</span>
+
+  forceAbsoluteUrls = 1
+  absRefPrefix = https://{$config.baseURL}/
+
+  pageTitleSeparator = -
+
+  no_cache = 0
+}

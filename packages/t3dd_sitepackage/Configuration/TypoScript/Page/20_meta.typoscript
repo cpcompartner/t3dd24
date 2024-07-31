@@ -1,0 +1,53 @@
+page.meta {
+  description = T3 Dev Day - Festival Website
+  keywords =
+  author = CP/Compartner
+  robots = index, follow
+  viewport = width=device-width, initial-scale=1
+  apple-mobile-web-app-capable = yes
+  compatible = IE=edge
+
+  og:title {
+    attribute = property
+    field = title
+  }
+
+  og:description = {$page.meta.description}
+  og:description {
+    attribute = property
+    field = description
+  }
+
+  # OpenGraph Tags
+  og:image {
+    attribute = property
+    stdWrap.cObject = FILES
+    stdWrap.cObject {
+      references {
+        data = levelfield:-1, media, slide
+      }
+
+      maxItems = 1
+      renderObj = COA
+      renderObj {
+        10 = IMG_RESOURCE
+        10 {
+          file {
+            import.data = file:current:uid
+            treatIdAsReference = 1
+            width = 1280c
+            height = 720c
+          }
+
+          stdWrap {
+            typolink {
+              parameter.data = TSFE:lastImgResourceInfo|3
+              returnLast = url
+              forceAbsoluteUrl = 1
+            }
+          }
+        }
+      }
+    }
+  }
+}
